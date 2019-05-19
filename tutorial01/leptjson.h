@@ -20,9 +20,9 @@ typedef struct
 enum
 {
     LEPT_PARSE_OK = 0,
-    LEPT_PARSE_EXPECT_VALUE,      // empty json string
-    LEPT_PARSE_INVALID_VALUE,     // value is invalid
-    LEPT_PARSE_ROOT_NOT_SINGULAR  // some char after whitespace
+    LEPT_PARSE_EXPECT_VALUE,      /* empty json string */
+    LEPT_PARSE_INVALID_VALUE,     /* value is invalid */
+    LEPT_PARSE_ROOT_NOT_SINGULAR  /* some char after whitespace */
 };
 
 int lept_parse(lept_value* v, const char* json);
